@@ -17,7 +17,7 @@ public class OtpService {
     private static final int MAX_REQUESTS = 3;
 
     private static final Duration OTP_EXPIRY =
-            Duration.ofSeconds(5);
+            Duration.ofMinutes(5);
 
     private static final Duration REQUEST_WINDOW =
             Duration.ofSeconds(10);

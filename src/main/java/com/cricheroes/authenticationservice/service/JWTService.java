@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
+import java.util.UUID;
 
 @Service
 public class JWTService {
@@ -25,7 +26,7 @@ public class JWTService {
         );
     }
 
-    public String generateAccessToken(Long userId) {
+    public String generateAccessToken(UUID userId) {
 
         Date now = new Date();
 

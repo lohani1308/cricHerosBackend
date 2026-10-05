@@ -34,5 +34,77 @@ public class AuthSession {
     @Column(name = "revoked_at")
     private LocalDateTime revokedAt;
 
-    // getters and setters
+
+    // =========================
+    // GETTERS
+    // =========================
+
+    public UUID getId() {
+        return id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public String getRefreshTokenHash() {
+        return refreshTokenHash;
+    }
+
+    public String getDeviceId() {
+        return deviceId;
+    }
+
+    public String getIpAddress() {
+        return ipAddress;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public LocalDateTime getExpiresAt() {
+        return expiresAt;
+    }
+
+    public LocalDateTime getRevokedAt() {
+        return revokedAt;
+    }
+
+
+    // =========================
+    // SETTERS
+    // =========================
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public void setRefreshTokenHash(String refreshTokenHash) {
+        this.refreshTokenHash = refreshTokenHash;
+    }
+
+    public void setDeviceId(String deviceId) {
+        this.deviceId = deviceId;
+    }
+
+    public void setIpAddress(String ipAddress) {
+        this.ipAddress = ipAddress;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setExpiresAt(LocalDateTime expiresAt) {
+        this.expiresAt = expiresAt;
+    }
+
+    public void setRevokedAt(LocalDateTime revokedAt) {
+        this.revokedAt = revokedAt;
+    }
 }
